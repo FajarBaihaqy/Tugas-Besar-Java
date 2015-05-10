@@ -40,43 +40,42 @@ public class KebersihanRuangKelas extends LingkunganRuangKelas {
     }
 
     String SirkulasiUdara(String SirkulasiUdara){
-        if(SirkulasiUdara.equalsIgnoreCase("lancar")){
-            System.out.println("sesuai");
+        if("lancar".equalsIgnoreCase(SirkulasiUdara)){
+            return "Sesuai";
         }
         else{
-            System.out.println("tidak sesuai");
+            return "Tidak Sesuai";
         }
-        return null;
+        
     }
     
-    int Pencahayaan(int NilaiPencahayaan){
+    String Pencahayaan(int NilaiPencahayaan){
         if(NilaiPencahayaan >= 250 || NilaiPencahayaan <= 350){
-            System.out.println("Sesuai");
+            return "Sesuai";
         }
         else{
-            System.out.println("tidak sesuai");
+            return "Tidak Sesuai";
         }
-        return 0;
+        
     }
     
-    int Kelembapan(int Kelembapan){
+    String Kelembapan(int Kelembapan){
         if(Kelembapan >= 70 || Kelembapan <= 80){
-            System.out.println("Sesuai");
+            return "Sesuai";
         }
         else{
-            System.out.println("tidak sesuai");
+            return "Tidak Sesuai";
         }
-        return 0;
+        
     }
     
-    int Suhu(int Suhu){
+    String Suhu(int Suhu){
         if(Suhu >= 25 || Suhu <= 35){
-           System.out.println("Sesuai");
+           return "Sesuai";
         }
         else{
-            System.out.println("tidak sesuai");
+           return "Tidak Sesuai";
         } 
-        return 0;
         
     }
 }

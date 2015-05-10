@@ -48,56 +48,53 @@ public class KenyamananRuangKelas extends KebersihanRuangKelas {
         this.Keausan = Keausan;
     }
 
-    String Kebisingan(String Kebisingan){
-        if(Kebisingan.equalsIgnoreCase("tidak bising")){
-            System.out.println("Sesuai");
+    String Kebisingan(int Kebisingan){
+        if(Kebisingan ==0){
+            return "Sesuai";
         }
         else{
-            System.out.println("tidak sesuai");
+            return "Tidak Sesuai";
         }
-        return null;
-    }
-    
-    String Bau(String Bau){
-        if(Bau.equalsIgnoreCase("tidak bau")){
-            System.out.println("sesuai");
-        }
-        else{
-            System.out.println("tidak sesuai");
-        }
-        return null;
-    }
-    
-    String Kebocoran(String Kebocoran){
-        if(Kebocoran.equalsIgnoreCase("tidak bocor")){
-            System.out.println("Sesuai");
-        }
-        else{
-            System.out.println("tidak sesuai");
-        }
-        return null;
         
     }
     
-    String Kerusakan(String Kerusakan){
-        if(Kerusakan.equalsIgnoreCase("tidak rusak")){
-            System.out.println("Sesuai");
+    String Bau(int Bau){
+        if(Bau ==0){
+            return "Sesuai";
         }
         else{
-            System.out.println("tidak sesuai");
+            return "Tidak Sesuai";
         }
-        return null;
         
     }
     
-    String Keausan(String Keausan){
-        if(Keausan.equalsIgnoreCase("tidak aus")){
-            System.out.println("Sesuai");
+    String Kebocoran(int Kebocoran){
+        if(Kebocoran ==0){
+            return "Sesuai";
         }
         else{
-            System.out.println("tidak sesuai");
+            return "Tidak Sesuai";
         }
-        return null;
+        
+    }
+    
+    String Kerusakan(int Kerusakan){
+        if(Kerusakan ==0){
+            return "Sesuai";
+        }
+        else{
+            return "Tidak Sesuai";
+        }
+        
+    }
+    
+    String Keausan(int Keausan){
+        if(Keausan ==0){
+            return "Sesuai";
+        }
+        else{
+            return "Tidak Sesuai";
+        }
         
     }
 }

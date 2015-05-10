@@ -186,110 +186,81 @@ public class JumlahKondisiPosisiSarana extends KondisiRuangKelas {
     
 
     
-    String Kelistrikan(int jumlahSteker, int KondisiSteker, String PosisiSteker){
-    if(jumlahSteker >= 4){
-        System.out.println("Sesuai");
+    String Kelistrikan(int jumlahSteker, int KondisiSteker, int PosisiSteker){
+    if(jumlahSteker >= 4 && KondisiSteker == 1 && PosisiSteker ==1){
+        return "sesuai";
     }
-    
-    else if(jumlahSteker < 4){
-        System.out.println("Tidak Sesuai");
+
+    else {
+        return "tidak sesuai";
     }
-    
-    if(KondisiSteker == 4){
-        System.out.println("Sesuai");
-    }
-    else if(KondisiSteker != 4){
-        System.out.println("Tidak Sesuai");
-    }
-    
-    if(PosisiSteker.equalsIgnoreCase("dipojok ruang") || PosisiSteker.equalsIgnoreCase("dekat dosen")){
-        System.out.println("Sesuai");
-    }
-        return null;
+        
 }
     
-    String Lcd (int JumlahKabelLcd, String KondisiKabelLcd, String PosisiKabelLcd){
-        if(JumlahKabelLcd >= 1){
-            System.out.println("Sesuai");
+    String Lcd (int JumlahKabelLcd, int KondisiKabelLcd, int PosisiKabelLcd){
+        if(JumlahKabelLcd >= 1 && KondisiKabelLcd == 2 && PosisiKabelLcd == 1){
+            return "Sesuai";
         }
-        else if(JumlahKabelLcd < 1){
-            System.out.println("Tidak Sesuai");
-        }
-        
-        if(KondisiKabelLcd.equalsIgnoreCase("berfungsi")){
-            System.out.println("Sesuai");
+        else{
+            return "Tidak Sesuai";
         }
         
-        if(PosisiKabelLcd.equalsIgnoreCase("dekat dosen")){
-           System.out.println("Sesuai");
-        }
-        return null;
         
     }
     
-    String Lampu (int JumlahLampu, int KondisiLampu, String PosisiLampu){
-        if(JumlahLampu >= 18){
-            System.out.println("Sesuai");
+    String Lampu (int JumlahLampu, int KondisiLampu, int PosisiLampu){
+        if(JumlahLampu >= 18 && KondisiLampu == 2 && PosisiLampu == 1 ){
+            return "Sesuai";
         }
         
-        if(KondisiLampu == 18){
-            System.out.println("Sesuai");
+        else{
+            return "Tidak Sesuai";
+        }
+
+    }
+    
+    String KipasAngin(int JumlahKipas, int KondisiKipas,int PosisiKipas){
+        if(JumlahKipas >= 2 && KondisiKipas ==3 && PosisiKipas ==2){
+            return "Sesuai";
         }
         
-        if(PosisiLampu.equalsIgnoreCase("atap ruangan")){
-            System.out.println("Sesuai");
-        }
-        return null;
-    }
-    
-    String KipasAngin(int JumlahKipas, int KondisiKipas,String PosisiKipas){
-        if(JumlahKipas >= 2){
-            System.out.println("Sesuai");
-        }
-        if(KondisiKipas == 2){
-            System.out.println("Sesuai");
-        }
-        if(PosisiKipas.equalsIgnoreCase("atap ruangan")){
-            System.out.println("Sesuai");
-        }
-        return null;
-    }
-    
-    String Ac(int JumlahAc,String KondisiAc,String PosisiAc){
-        if(JumlahAc >= 1 ){
-            System.out.println("Sesuai");
-        }
-        if(KondisiAc.equalsIgnoreCase("baik")){
-            System.out.println("Sesuai");
-        }
-        if(PosisiAc.equalsIgnoreCase("dibelakang") && PosisiAc.equalsIgnoreCase("samping")){
-            System.out.println("Sesuai");
-        }
-        return null;
-    }
-    
-    String Internet(String Ssid,int Bandwidth){
-        if(Ssid.equals("UMM Hotspot")){
-            System.out.println("Sesuai");
+        else{
+            return  "Tidak Sesuai";
         }
         
-        if(Bandwidth == 1){
-            System.out.println("Sesuai");
-        }
-        return null;
     }
     
-    String Cctv(int jumlahCctv,int KondisiCctv,String PosisiCctv){
-        if(jumlahCctv == 2){
-            System.out.println("Sesuai");
+    String Ac(int JumlahAc,int KondisiAc,int PosisiAc){
+        if(JumlahAc >= 1 && KondisiAc ==1 && PosisiAc ==2){
+            return "Sesuai";
         }
         
-        if(KondisiCctv == 2){
-            System.out.println("Sesuai");
+        else{
+            return "Tidak Sesuai";
         }
-        if(PosisiCctv.equalsIgnoreCase("depan") && PosisiCctv.equalsIgnoreCase("belakang")){
-            System.out.println("Sesuai");
+        
+    }
+    
+    String Internet(int Ssid,int Bandwidth){
+        if(Ssid ==1 && Bandwidth ==2){
+            return "Sesuai";
         }
-        return null;
+        
+        else{
+            return "Tidak Sesuai";
+        }
+        
+    }
+    
+    String Cctv(int jumlahCctv,int KondisiCctv,int PosisiCctv){
+        if(jumlahCctv ==2 && KondisiCctv ==2 && PosisiCctv ==1){
+            return "Sesuai";
+        }
+        
+        
+        else{
+            return "Sesuai";
+        }
+        
     }
 }

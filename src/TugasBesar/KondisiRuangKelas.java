@@ -10,7 +10,6 @@ public class KondisiRuangKelas extends IdentitasRuangKelas {
     private int JumlahPintu;
     private int JumlahKursi;
     private int JumlahJendela;
-    int LuasRuang;
     
 
     public int getPanjang() {
@@ -53,57 +52,38 @@ public class KondisiRuangKelas extends IdentitasRuangKelas {
         this.JumlahJendela = JumlahJendela;
     }
 
-    public int LuasRuangan(int Panjang, int Lebar){
-        
-        LuasRuang = Panjang*Lebar;
-        
-        
-        Scanner in = new Scanner(System.in);
-        System.out.println("Masukkan panjang");
-        System.out.println("Masukkan lebar");
-        System.out.println("Luas Ruangan"+LuasRuang);
-        
-        if(Panjang == Lebar){
-            System.out.println("Tidak Sesuai");
-        }
-        if(Panjang != Lebar){
-            System.out.println("Sesuai");
-        }
-        
-        
-        
-        
-        
-        return 0;
-        
+    int LuasRuangan(int Panjang, int Lebar){
+        return Panjang*Lebar;   
     }
     
-   public int RasioLuas(int LuasRuang, int JumlahKursi){
+    String BentukRuang(int Panjang, int Lebar){
+        if(Panjang != Lebar){
+            return "Sesuai";
+        }
+        else{
+            return "Tidak Sesuai";
+        }
+    }
+    
+    String RasioLuas(int LuasRuang, int JumlahKursi){
        int RasioLuas = LuasRuang/JumlahKursi;
         if (RasioLuas >= 0.5){
-            System.out.println("Sesuai");
+            return "Sesuai";
         }
-        if(RasioLuas < 0.5){
-            System.out.println("Tidak Sesuai");
+        else{
+            return "Tidak Sesuai";
         }
-        return 0;
+        
    }
    
-   int Pintu_Jendela(){
-       if(JumlahPintu >= 2){
-           System.out.println("Sesuai");
-       }
-       else if (JumlahPintu < 2){
-           System.out.println("Tidak Sesuai");
+    String Pintu_Jendela(int JumlahPintu, int JumlahJendela){
+       if(JumlahPintu >= 2 && JumlahJendela >=1){
+           return "Sesuai";
        }
        
-       if(JumlahJendela >= 1){
-           System.out.println("Sesuai");
+       else {
+           return "Tidak Sesuai";
        }
-       
-       else if(JumlahJendela < 1){
-           System.out.println("Tidak Sesuai");
-       }
-        return 0;
+        
    }
 }

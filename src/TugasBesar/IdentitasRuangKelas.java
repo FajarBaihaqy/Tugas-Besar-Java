@@ -33,10 +33,4 @@ public class IdentitasRuangKelas {
         this.ProgramStudy = ProgramStudy;
     }
 
-    public String Input(){
-        Scanner in = new Scanner(System.in);
-        
-        return null;
-        
-    }
 }

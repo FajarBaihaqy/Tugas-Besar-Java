@@ -31,33 +31,32 @@ public class KeamananRuangKelas extends KenyamananRuangKelas {
     }
 
     String Kekokohan(String Kekokohan){
-        if(Kekokohan.equalsIgnoreCase("kokoh")){
-            System.out.println("Sesuai");
+        if("kokoh".equalsIgnoreCase(Kekokohan)){
+            return "Sesuai";
         }
         else{
-            System.out.println("tidak sesuai");
+            return "Tidak Sesuai";
         }
-        return null;
         
     }
     
     String KunciPintuJendela(String KunciPintuJendela){
-        if(KunciPintuJendela.equalsIgnoreCase("ada")){
-            System.out.println("Sesuai");
+        if("ada".equalsIgnoreCase(KunciPintuJendela)){
+            return "Sesuai";
         }
         else{
-            System.out.println("tidak sesuai");
+            return "Tidak Sesuai";
         }
-        return null;
+        
     }
     
     String Bahaya(String Bahaya){
-        if(Bahaya.equalsIgnoreCase("aman")){
-            System.out.println("Sesuai");
+        if("Aman".equalsIgnoreCase(Bahaya)){
+            return "Sesuai";
         }
         else{
-            System.out.println("tidak sesuai");
+            return "Tidak Sesuai";
         }
-        return null;
+        
     }
 }
