@@ -1,36 +1,21 @@
 
 package TugasBesar;
 
-import java.util.Scanner;
 
 
-public class IdentitasRuangKelas {
-    private String NamaRuang;
-    private String LokasiRuang;
-    private String ProgramStudy;
-
-    public String getNamaRuang() {
-        return NamaRuang;
+public class IdentitasRuangKelas extends Input{
+    String NamaRuang(String NamaRuang){
+        return null;
+        
     }
-
-    public void setNamaRuang(String NamaRuang) {
-        this.NamaRuang = NamaRuang;
+    
+    String LokasiRuang(String LokasiRuang){
+        return null;
+        
     }
-
-    public String getLokasiRuang() {
-        return LokasiRuang;
+    
+    String ProgramStudy(String ProgramStudy){
+        return null;
+        
     }
-
-    public void setLokasiRuang(String LokasiRuang) {
-        this.LokasiRuang = LokasiRuang;
-    }
-
-    public String getProgramStudy() {
-        return ProgramStudy;
-    }
-
-    public void setProgramStudy(String ProgramStudy) {
-        this.ProgramStudy = ProgramStudy;
-    }
-
 }

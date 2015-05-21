@@ -1,35 +1,8 @@
 
 package TugasBesar;
 
-public class KeamananRuangKelas extends KenyamananRuangKelas {
-    private String Kekokohan;
-    private String KunciPintuJendela;
-    private String Bahaya; 
-
-    public String getKekokohan() {
-        return Kekokohan;
-    }
-
-    public void setKekokohan(String Kekokohan) {
-        this.Kekokohan = Kekokohan;
-    }
-
-    public String getKunciPintuJendela() {
-        return KunciPintuJendela;
-    }
-
-    public void setKunciPintuJendela(String KunciPintuJendela) {
-        this.KunciPintuJendela = KunciPintuJendela;
-    }
-
-    public String getBahaya() {
-        return Bahaya;
-    }
-
-    public void setBahaya(String Bahaya) {
-        this.Bahaya = Bahaya;
-    }
-
+public class KeamananRuangKelas extends Input {
+     
     String Kekokohan(String Kekokohan){
         if("kokoh".equalsIgnoreCase(Kekokohan)){
             return "Sesuai";

@@ -1,44 +1,8 @@
 
 package TugasBesar;
 
-public class KebersihanRuangKelas extends LingkunganRuangKelas {
-    private String SirkulasiUdara;
-    private int NilaiPencahayaan;
-    private int Kelembapan;
-    private int Suhu;
-
-    public String getSirkulasiUdara() {
-        return SirkulasiUdara;
-    }
-
-    public void setSirkulasiUdara(String SirkulasiUdara) {
-        this.SirkulasiUdara = SirkulasiUdara;
-    }
-
-    public int getNilaiPencahayaan() {
-        return NilaiPencahayaan;
-    }
-
-    public void setNilaiPencahayaan(int NilaiPencahayaan) {
-        this.NilaiPencahayaan = NilaiPencahayaan;
-    }
-
-    public int getKelembapan() {
-        return Kelembapan;
-    }
-
-    public void setKelembapan(int Kelembapan) {
-        this.Kelembapan = Kelembapan;
-    }
-
-    public int getSuhu() {
-        return Suhu;
-    }
-
-    public void setSuhu(int Suhu) {
-        this.Suhu = Suhu;
-    }
-
+public class KebersihanRuangKelas extends Input {
+    
     String SirkulasiUdara(String SirkulasiUdara){
         if("lancar".equalsIgnoreCase(SirkulasiUdara)){
             return "Sesuai";
