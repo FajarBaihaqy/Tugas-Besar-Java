@@ -1,83 +1,48 @@
-
 package TugasBesar;
 
-public class JumlahKondisiPosisiSarana extends Input {
-    
-    String Kelistrikan(int jumlahSteker, int KondisiSteker, int PosisiSteker){
-    if(jumlahSteker >= 4 && KondisiSteker == 1 && PosisiSteker ==1){
-        return "sesuai";
-    }
+import java.util.Scanner;
 
-    else {
-        return "tidak sesuai";
-    }
-        
-}
+public class JumlahKondisiPosisiSarana {
+    Scanner c = new Scanner(System.in);
+	int jumlah;
+	String kondisi;
+	String posisi;
     
-    String Lcd (int JumlahKabelLcd, int KondisiKabelLcd, int PosisiKabelLcd){
-        if(JumlahKabelLcd >= 1 && KondisiKabelLcd == 2 && PosisiKabelLcd == 1){
-            return "Sesuai";
-        }
-        else{
-            return "Tidak Sesuai";
-        }
+ public void input(String input){
+		System.out.print("Jumlah  = ");
+		jumlah = c.nextInt();
+		System.out.print("Kondisi = ");
+		kondisi = c.next();
+		System.out.print("Posisi  = ");
+		posisi = c.next();
+	}
         
         
-    }
+	   public void output(String output){
+		System.out.println("Jumlah : "+jumlah);
+		System.out.println("Kondisi : "+kondisi);
+		System.out.println("Posisi : "+posisi);
+   	}
+           
+           
+           boolean JumlahSteker(){
+                return true;
+           }
+           String KondisiSteker(){
+            return null;
+           }
+           boolean JumlahLcd(){
+                return true;
+           }
+           boolean JumlahLampu(){
+                return true;
+           }
+           boolean JumlahKipas(){
+                return true;
+           }
+           boolean JumlahAc(){
+                return true;
+           }
     
-    String Lampu (int JumlahLampu, int KondisiLampu, int PosisiLampu){
-        if(JumlahLampu >= 18 && KondisiLampu == 2 && PosisiLampu == 1 ){
-            return "Sesuai";
-        }
-        
-        else{
-            return "Tidak Sesuai";
-        }
-
-    }
     
-    String KipasAngin(int JumlahKipas, int KondisiKipas,int PosisiKipas){
-        if(JumlahKipas >= 2 && KondisiKipas ==3 && PosisiKipas ==2){
-            return "Sesuai";
-        }
-        
-        else{
-            return  "Tidak Sesuai";
-        }
-        
-    }
-    
-    String Ac(int JumlahAc,int KondisiAc,int PosisiAc){
-        if(JumlahAc >= 1 && KondisiAc ==1 && PosisiAc ==2){
-            return "Sesuai";
-        }
-        
-        else{
-            return "Tidak Sesuai";
-        }
-        
-    }
-    
-    String Internet(int Ssid,int Bandwidth){
-        if(Ssid ==1 && Bandwidth ==2){
-            return "Sesuai";
-        }
-        
-        else{
-            return "Tidak Sesuai";
-        }
-        
-    }
-    
-    String Cctv(int jumlahCctv,int KondisiCctv,int PosisiCctv){
-        if(jumlahCctv ==2 && KondisiCctv ==2 && PosisiCctv ==1){
-            return "Sesuai";
-        }
-        
-        
-        else{
-            return "Sesuai";
-        }
-        
-    }
 }

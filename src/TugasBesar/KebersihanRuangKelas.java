@@ -1,45 +1,43 @@
-
+//Febri
 package TugasBesar;
 
-public class KebersihanRuangKelas extends Input {
+import java.util.Scanner;
+
+public class KebersihanRuangKelas {
+    String SirkulasiUdara;
+    int NilaiPencahayaan;
+    int Kelembapan;
+    int Suhu;
     
-    String SirkulasiUdara(String SirkulasiUdara){
-        if("lancar".equalsIgnoreCase(SirkulasiUdara)){
-            return "Sesuai";
-        }
-        else{
-            return "Tidak Sesuai";
-        }
+    Scanner e=new Scanner(System.in);
+    public void Kebersihan(){
+        System.out.print("Sirkulasi udara = ");
+        SirkulasiUdara=e.next();
+        System.out.print("Nilai pencahayaan = ");
+        NilaiPencahayaan = e.nextInt();
+        System.out.print("Kelembapan = ");
+        Kelembapan = e.nextInt();
+        System.out.print("Suhu = ");
+        Suhu = e.nextInt();
+    }
+    
+    String SirkulasiUdara(){
+        return null;
+    }
+    
+    
+    boolean Pencahayaan(){
+        return true;   
+    }
+    
+    
+    boolean Kelembapan(){
+        return true;
         
     }
     
-    String Pencahayaan(int NilaiPencahayaan){
-        if(NilaiPencahayaan >= 250 || NilaiPencahayaan <= 350){
-            return "Sesuai";
-        }
-        else{
-            return "Tidak Sesuai";
-        }
-        
-    }
     
-    String Kelembapan(int Kelembapan){
-        if(Kelembapan >= 70 || Kelembapan <= 80){
-            return "Sesuai";
-        }
-        else{
-            return "Tidak Sesuai";
-        }
-        
-    }
-    
-    String Suhu(int Suhu){
-        if(Suhu >= 25 || Suhu <= 35){
-           return "Sesuai";
-        }
-        else{
-           return "Tidak Sesuai";
-        } 
-        
+    boolean Suhu(){
+        return true;
     }
 }

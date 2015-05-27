@@ -1,14 +1,35 @@
 
 package TugasBesar;
 
-public class LingkunganRuangKelas extends Input {
+import java.util.Scanner;
+
+public class LingkunganRuangKelas {
     
-    String Kebersihan(int KondisiLantai,int KondisiDinding,int KondisiAtap,int KondisiPintu,int KondisiJendela){
-        if(KondisiLantai==1 && KondisiDinding==1 && KondisiAtap==1 && KondisiPintu==1 && KondisiJendela==1){
-        return "Sesuai";
+    String KondisiLantai;
+    String KondisiDinding;
+    String KondisiAtap;
+    String KondisiPintu;
+    String KondisiJendela;
+    
+    Scanner d=new Scanner(System.in);
+    
+    public void input(String lingkungan){
+        System.out.print("Kondisi lantai  = ");
+        KondisiLantai=d.next();
+        System.out.print("Kondisi dinding = ");
+        KondisiDinding=d.next();
+        System.out.print("Kondisi atap    = ");
+        KondisiAtap=d.next();
+        System.out.print("Kondisi pintu   = ");
+        KondisiPintu=d.next();
+        System.out.print("Kondisi jendela = ");
+        KondisiJendela=d.next();
+        }
+    
+    String lantai(){
+        return KondisiLantai;
     }
-        else{
-        return "Tidak Sesuai";
-    }
+    String semua(){
+        return null;
     }
 }

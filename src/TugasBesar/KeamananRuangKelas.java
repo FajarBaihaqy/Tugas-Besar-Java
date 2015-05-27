@@ -1,35 +1,32 @@
-
+//Febri
 package TugasBesar;
 
-public class KeamananRuangKelas extends Input {
+import java.util.Scanner;
+
+public class KeamananRuangKelas {
+     String Kekokohan;
+     String KunciPintuJendela;
+     String Bahaya;
      
-    String Kekokohan(String Kekokohan){
-        if("kokoh".equalsIgnoreCase(Kekokohan)){
-            return "Sesuai";
-        }
-        else{
-            return "Tidak Sesuai";
-        }
-        
+     Scanner g = new Scanner(System.in);
+    public void Keamanan(){
+        System.out.println("Apa gedung ini kokoh    = ");
+        Kekokohan=g.next();
+        System.out.println("Kunci pintu dan jendela = ");
+        KunciPintuJendela=g.next();
+        System.out.println("Apa gedung ini bahaya   = ");
+        Bahaya=g.next();
     }
     
-    String KunciPintuJendela(String KunciPintuJendela){
-        if("ada".equalsIgnoreCase(KunciPintuJendela)){
-            return "Sesuai";
-        }
-        else{
-            return "Tidak Sesuai";
-        }
-        
+    String Kekokohan(){
+        return null;
     }
     
-    String Bahaya(String Bahaya){
-        if("Aman".equalsIgnoreCase(Bahaya)){
-            return "Sesuai";
-        }
-        else{
-            return "Tidak Sesuai";
-        }
-        
+    String KunciPintuJendela(){
+        return null;
+    }
+    
+    String Bahaya(){
+        return null;
     }
 }

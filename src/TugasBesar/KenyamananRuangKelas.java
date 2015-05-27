@@ -1,55 +1,46 @@
-
+//Febri
 package TugasBesar;
 
-public class KenyamananRuangKelas extends Input {
+import java.util.Scanner;
+
+public class KenyamananRuangKelas {
+    String Kebisingan;
+    String Bau;
+    String Kebocoran;
+    String Kerusakan;
+    String Keausan;
     
-    String Kebisingan(int Kebisingan){
-        if(Kebisingan ==0){
-            return "Sesuai";
-        }
-        else{
-            return "Tidak Sesuai";
-        }
-        
+    Scanner f = new Scanner(System.in);
+    public void Kenyamanan(){
+        System.out.println("Kebisingan = ");
+        Kebisingan=f.next();
+        System.out.println("Bau = ");
+        Bau=f.next();
+        System.out.println("Kebocoran = ");
+        Kebocoran=f.next();
+        System.out.println("Kerusakan = ");
+        Kerusakan=f.next();
+        System.out.println("Keausan = ");
+        Keausan=f.next();
     }
     
-    String Bau(int Bau){
-        if(Bau ==0){
-            return "Sesuai";
-        }
-        else{
-            return "Tidak Sesuai";
-        }
-        
+     String Kebisingan(){
+        return null;
     }
     
-    String Kebocoran(int Kebocoran){
-        if(Kebocoran ==0){
-            return "Sesuai";
-        }
-        else{
-            return "Tidak Sesuai";
-        }
-        
+    String Bau(){
+        return null;
     }
     
-    String Kerusakan(int Kerusakan){
-        if(Kerusakan ==0){
-            return "Sesuai";
-        }
-        else{
-            return "Tidak Sesuai";
-        }
-        
+    String Kebocoran(){
+        return null;
     }
     
-    String Keausan(int Keausan){
-        if(Keausan ==0){
-            return "Sesuai";
-        }
-        else{
-            return "Tidak Sesuai";
-        }
-        
+    String Kerusakan(){
+        return null;
+    }
+    
+    String Keausan(){
+        return null;
     }
 }
