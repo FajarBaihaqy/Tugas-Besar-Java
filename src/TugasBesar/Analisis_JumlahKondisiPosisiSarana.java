@@ -6,7 +6,7 @@ public class Analisis_JumlahKondisiPosisiSarana extends JumlahKondisiPosisiSaran
     //Steker
     @Override
     public boolean JumlahSteker(){
-        if(jumlah>=4){
+        if(JumlahSteker>=4){
             System.out.println("sesuai.");
            return true;
         }
@@ -19,29 +19,29 @@ public class Analisis_JumlahKondisiPosisiSarana extends JumlahKondisiPosisiSaran
     
     @Override
     public String KondisiSteker(){
-        if(kondisi.equalsIgnoreCase("baik") && jumlah>=4){
+        if(KondisiSteker.equalsIgnoreCase("baik") && JumlahSteker>=4){
             System.out.println("sesuai.");
         }
         else{
             System.out.println("tidak sesuai.");
         }
-        return kondisi;
+        return KondisiSteker;
     }
     
     public String PosisiSteker(){
-        if(posisi.equalsIgnoreCase("dekat dosen") && jumlah>=4){
+        if(PosisiSteker.equalsIgnoreCase("dekat dosen") && JumlahSteker>=4){
             System.out.println("sesuai.");
         }
         else{
             System.out.println("tidak sesuai.");
         }
-        return posisi;
+        return PosisiSteker;
     }
     
     //LCD
     @Override
     public boolean JumlahLcd(){
-        if(jumlah>=1){
+        if(JumlahKabelLcd>=1){
             System.out.println("sesuai.");
            return true;
         }
@@ -52,29 +52,29 @@ public class Analisis_JumlahKondisiPosisiSarana extends JumlahKondisiPosisiSaran
     }
     
     public String KondisiLcd(){
-        if(kondisi.equalsIgnoreCase("baik")){
+        if(KondisiKabelLcd.equalsIgnoreCase("baik")){
             System.out.println("sesuai.");
         }
         else{
             System.out.println("tidak sesuai.");
         }
-        return kondisi;
+        return KondisiKabelLcd;
     }
     
     public String PosisiLcd(){
-        if(posisi.equalsIgnoreCase("dekat dosen")){
+        if(PosisiKabelLcd.equalsIgnoreCase("dekat dosen")){
             System.out.println("sesuai.");
         }
         else{
             System.out.println("tidak sesuai.");
         }
-        return posisi;
+        return PosisiKabelLcd;
     }
     
     //Lampu
     @Override
     public boolean JumlahLampu(){
-        if(jumlah>=18){
+        if(JumlahLampu>=18){
             System.out.println("sesuai");
            return true;
         }
@@ -85,29 +85,29 @@ public class Analisis_JumlahKondisiPosisiSarana extends JumlahKondisiPosisiSaran
     }
     
     public String KondisiLampu(){
-        if(kondisi.equalsIgnoreCase("baik")&& jumlah==18){
+        if(KondisiLampu.equalsIgnoreCase("baik")&& JumlahLampu==18){
             System.out.println("sesuai");
         }
         else{
             System.out.println("tidak sesuai");
         }
-        return kondisi;
+        return KondisiLampu;
     }
     
     public String PosisiLampu(){
-        if(posisi.equalsIgnoreCase("atap ruangan")){
+        if(PosisiLampu.equalsIgnoreCase("atap ruangan")){
             System.out.println("sesuai");
         }
         else{
             System.out.println("tidak sesuai");
         }
-        return posisi;
+        return PosisiLampu;
     }
     
     //Kipas angin
     @Override
     public boolean JumlahKipas(){
-        if(jumlah>=2){
+        if(JumlahKipas>=2){
             System.out.println("sesuai.");
            return true;
         }
@@ -118,29 +118,29 @@ public class Analisis_JumlahKondisiPosisiSarana extends JumlahKondisiPosisiSaran
     }
     
     public String KondisiKipas(){
-        if(kondisi.equalsIgnoreCase("baik")&& jumlah==2){
+        if(KondisiKipas.equalsIgnoreCase("baik")&& JumlahKipas==2){
             System.out.println("sesuai.");
         }
         else{
             System.out.println("tidak sesuai.");
         }
-        return kondisi;
+        return KondisiKipas;
     }
     
     public String PosisiKipas(){
-        if(posisi.equalsIgnoreCase("atap ruangan")){
+        if(PosisiKipas.equalsIgnoreCase("atap ruangan")){
             System.out.println("sesuai.");
         }
         else{
             System.out.println("tidak sesuai.");
         }
-        return posisi;
+        return PosisiKipas;
     }
     
     //AC
     @Override
     public boolean JumlahAc(){
-        if(jumlah>=1){
+        if(JumlahAc>=1){
             System.out.println("sesuai.");
            return true;
         }
@@ -151,24 +151,81 @@ public class Analisis_JumlahKondisiPosisiSarana extends JumlahKondisiPosisiSaran
     }
     
     public String KondisiAc(){
-        if(kondisi.equalsIgnoreCase("baik")){
+        if(KondisiAc.equalsIgnoreCase("baik")){
             System.out.println("sesuai.");
         }
         else{
             System.out.println("tidak sesuai.");
         }
-        return kondisi;
+        return KondisiAc;
     }
     
     public String PosisiAc(){
-        if(posisi.equalsIgnoreCase("disamping") || posisi.equalsIgnoreCase("dibelakang")){
-            System.out.println("sesuai.");
+        if(PosisiAc.equalsIgnoreCase("disamping") || PosisiAc.equalsIgnoreCase("dibelakang")){
+            System.out.println("sesuai");
         }
         else{
             System.out.println("tidak sesuai.");
         }
-        return posisi;
+        return PosisiAc;
     }
     
+    /**
+     *
+     * @return
+     */
+    @Override
+    public String Ssid(){
+        if(Ssid.equals("UMM Hotspot")){
+            System.out.println("sesuai");
+        }
+        else{
+            System.out.println("tidak sesuai");
+        }
+        return Ssid;
+    }
     
+    public boolean Bandwidth(){
+        if(Bandwidth==1 && Ssid.equals("UMM Hotspot")){
+            System.out.println("sesuai");
+            return true;
+        }
+        else{
+            System.out.println("tidak sesuai");
+        }
+        return false;
+    }
+    
+    //CCTV
+    @Override
+    public boolean JumlahCctv(){
+        if(JumlahCctv==2){
+            System.out.println("sesuai");
+            return true;
+        }
+        else{
+            System.out.println("tidak sesuai");   
+        }
+        return false;
+    }
+    
+    public String KondisiCctv(){
+        if(KondisiCctv.equalsIgnoreCase("baik")&&JumlahCctv==2){
+            System.out.println("sesuai");
+        }
+        else{
+            System.out.println("tidak sesuai");
+        }
+        return KondisiCctv;
+    }
+    
+    public String PosisiCctv(){
+        if(PosisiCctv.equalsIgnoreCase("depan")||PosisiCctv.equalsIgnoreCase("belakang")){
+            System.out.println("sesuai");
+        }
+        else{
+            System.out.println("tidak sesuai");
+        }
+        return PosisiCctv;
+    }
 }
